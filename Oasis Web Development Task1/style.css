@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+body {
+    /* font-family: sans-serif; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+     
+    background-image: url(https://img.freepik.com/free-vector/mathematical-geometric-background-vector-gradient-blue-education-remix_53876-114100.jpg?size=626&ext=jpg&ga=GA1.2.749687985.1662885737);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.calculator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px; 
+   
+       box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1), 
+    inset -5px -5px 10px #fff;
+    border-radius: auto; 
+   
+
+    
+
+}
+
+.theme-toggler {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.theme-toggler.active {
+    color: #333;
+}
+
+.theme-toggler.active::before {
+    background-color: #fff;
+}
+
+.theme-toggler::before {
+    content: '';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #333;
+    z-index: -1;
+    
+}
+
+#display {
+    margin: 0 10px;
+    height: 150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+  }
+
+#display::-webkit-scrollbar {
+    display: block;
+    height: 5px;
+}
+
+button {
+    height: 65px;
+    width: 65px;
+    border: 0;
+    border-radius: 40px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+button:hover {
+    transform: scale(1.4);
+    
+}
+
+button#equal {
+    height: 130px;
+}
+
+/* light theme */
+
+.calculator {
+    /* white color */
+    /* background-color: #fff; */
+    background-color: skyblue; 
+}
+
+.calculator #display {
+    color: #0a1e23;
+}
+
+.calculator button#clear {
+    
+    /* simple color */
+    /* background-color: #ffd5d8;
+    color: #fc4552; */
+    background-color: lightslategray;
+    color: whitesmoke;
+    
+}
+
+
+
+
+.calculator button.btn-number {
+    /* background-color: #c3eaff; */
+    background-color: cornflowerblue;
+    color: #000000;
+}
+
+.calculator button.btn-operator {
+    background-color: #ffd0fb;
+    color: #f967f3;
+  }
+  
+  .calculator button.btn-equal {
+    /* lightgray */
+    /* background-color: #adf9e7; */
+    background-color: #aa00a4;
+    color: #000;
+  }
+
+  /* dark theme */
+
+  .calculator.dark {
+    background-color: #071115;
+  }
+
+  .calculator.dark #display {
+    color: #f8fafb;
+  }
+
+  .calculator.dark button#clear {
+    background-color: #2d191e;
+    color: #bd3740;
+    
+    
+  }
+
+  .calculator.dark button.btn-number {
+    background-color: #1b2f38;
+    color: #f8fafb;
+  }
+
+  .calculator.dark button.btn-operator {
+    background-color: #2e1f39;
+    color: #aa00a4;
+  }
+  
+  .calculator.dark button.btn-equal {
+    background-color: #223323;
+    color: #ffffff;
+  }
+  
+
+  
